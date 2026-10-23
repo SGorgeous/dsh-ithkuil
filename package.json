@@ -31,8 +31,8 @@
     "index.js",
     "cordis.patch.yml",
     "lib",
-    "data",
-    "tools",
+    "data/*.json",
+    "tools/*.py",
     "README.md",
     "AGENTS.md",
     "NOTICE.md",
@@ -43,7 +43,11 @@
   "scripts": {
     "validate": "node validate.mjs --run",
     "check": "node validate.mjs",
-    "selfcheck": "node selfcheck.mjs"
+    "selfcheck": "node selfcheck.mjs",
+    "prepublishOnly": "node validate.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "dsh": ">=0.1.7-rc.1",
