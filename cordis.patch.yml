@@ -1,0 +1,10 @@
+# ============================================================================
+# dsh-ithkuil —— bundle patch（插件自带的挂载声明）
+# ============================================================================
+# 装着之后，profile 只要在 dsh.profile.bundles 里列出本包名就生效。
+# 本地开发：dsh plugin --profile desktop add link:D:/WorkStation/deepseek/works/dsh-ithkuil
+# ============================================================================
+
+- insert:
+    - id: ithkuil
+      name: dsh-ithkuil

@@ -1,0 +1,16 @@
+# 忽略：官方原始文档（版权归作者，不进仓库）+ 可再生的中间文件
+data/html/
+data/text/
+data/*.pdf
+data/phonotaxis.txt
+data/roots-index.json
+
+# 依赖与产物
+node_modules/
+out/
+*.log
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc

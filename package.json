@@ -1,0 +1,57 @@
+{
+  "name": "dsh-ithkuil",
+  "version": "0.1.0",
+  "description": "DSH 插件：新伊库伊尔语（New Ithkuil / Ithkuil IV）翻译工作台 —— 官方语法全文检索、词根/词缀库、格表、例句，以及按十槽拼装词形与音位体检",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "ithkuil",
+    "new-ithkuil",
+    "conlang",
+    "translation"
+  ],
+  "license": "MIT",
+  "author": "SGorgeous",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SGorgeous/dsh-ithkuil.git"
+  },
+  "homepage": "https://github.com/SGorgeous/dsh-ithkuil#readme",
+  "bugs": {
+    "url": "https://github.com/SGorgeous/dsh-ithkuil/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "lib",
+    "data",
+    "tools",
+    "README.md",
+    "AGENTS.md",
+    "NOTICE.md",
+    "LICENSE",
+    "validate.mjs",
+    "selfcheck.mjs"
+  ],
+  "scripts": {
+    "validate": "node validate.mjs --run",
+    "check": "node validate.mjs",
+    "selfcheck": "node selfcheck.mjs"
+  },
+  "engines": {
+    "dsh": ">=0.1.7-rc.1",
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
