@@ -1,0 +1,11 @@
+# npm 包里不要这些（官方原始文档 + 中间产物 + 开发垃圾）
+data/html/
+data/text/
+data/*.pdf
+data/phonotaxis.txt
+data/roots-index.json
+__pycache__/
+*.pyc
+.git*
+_*.ps1
+Dockerfile
